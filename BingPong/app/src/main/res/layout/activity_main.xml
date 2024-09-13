@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Player 1 Name Input -->
+    <EditText
+        android:id="@+id/player1_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:hint="Enter Player 1 Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Player 1 Score -->
+    <TextView
+        android:id="@+id/player1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1: 0"
+        android:textSize="24sp"
+        android:layout_below="@id/player1_name_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Player 2 Name Input -->
+    <EditText
+        android:id="@+id/player2_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:hint="Enter Player 2 Name"
+        android:layout_below="@id/player1_score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Player 2 Score -->
+    <TextView
+        android:id="@+id/player2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2: 0"
+        android:textSize="24sp"
+        android:layout_below="@id/player2_name_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Player 1 Score Button -->
+    <Button
+        android:id="@+id/button_player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Point to Player 1"
+        android:layout_below="@id/player2_score"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true" />
+
+    <!-- Player 2 Score Button -->
+    <Button
+        android:id="@+id/button_player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Point to Player 2"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/player2_score"
+        android:layout_marginTop="30dp" />
+
+    <!-- Display Winner -->
+    <TextView
+        android:id="@+id/winner_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winner: "
+        android:textSize="24sp"
+        android:layout_below="@id/button_player1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <!-- Reset Game Button -->
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:layout_below="@id/winner_display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Start Voice Recognition Button -->
+    <Button
+        android:id="@+id/button_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use Voice Command"
+        android:layout_below="@id/button_reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>
